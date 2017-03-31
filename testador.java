@@ -9,10 +9,7 @@ public class testador {
 		for (int i =0; i < vetorInteiro .length; i++) {
 			System.out.println(vetorInteiro [i]);
 			
-			System.out.println("Maior numero do vetor é: " );
-			System.out.println("o Menor numero do vetor é : ");
-			System.out.println("a soma dos vetores é : "  );
-			System.out.println("o elemento da posisao é : ");
+		
 		}
 }
 }

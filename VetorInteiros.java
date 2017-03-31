@@ -12,11 +12,7 @@ import java.util.Scanner;
 		int calSoma = 0;
 		String numExistente = "verificar numExistente";
 		
-		
-		
 		int[] vetorInteiros = new int[5];
-		
-		int [] vetorString = new int [5];
 
 		vetorInteiros[0]=1;
 		vetorInteiros[1]=2;
@@ -27,7 +23,7 @@ import java.util.Scanner;
 		String [] vetorInteiro = new String[] {"1", "2","3", "4","5"};
 				
 		for (int i =0; i < vetorInteiros.length; i++) {	
-		System.out.println(vetorString[i]);
+		System.out.println(vetorInteiros[i]);
 }		
 	for (int i = 0; i < vetorInteiros.length; i++) {
 		if (vetorInteiros[i]> maior){
@@ -45,8 +41,13 @@ import java.util.Scanner;
 }
 		System.out.println("digite um numero: ");
 		int i = lerNumero.nextInt();
-		posicao = vetorInteiros[i];	
-}
-			
-}
+		posicao = vetorInteiros[i];
+		System.out.println(lerNumero);
 	
+	
+	System.out.println("o maior numero do vetor é igual a: " + maior);
+	System.out.println("o menor numero do vetor é igual a: " + menor);
+	System.out.println("a soma dos vetores é igual a: "  + calSoma);
+	
+		}
+}
