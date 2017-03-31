@@ -1,31 +1,37 @@
 package Vetor;
 
+import java.util.Scanner;
 	public class VetorInteiros {
 
 	public static void main(String[] args) {
 		
-		int maior[] = new int[5];
+		Scanner lerNumero = new Scanner(System.in);
+		int maior = 0;
 		int menor = 0;
 		int posicao = 0;
 		int calSoma = 0;
+		String numExistente = "verificar numExistente";
+		
+		
 		
 		int[] vetorInteiros = new int[5];
 		
-		String[] vetorString = new String [5];
+		int [] vetorString = new int [5];
 
 		vetorInteiros[0]=1;
 		vetorInteiros[1]=2;
 		vetorInteiros[2]=3;
 		vetorInteiros[3]=4;
 		vetorInteiros[4]=5;
-	
-		String[] vetorInteiro = new String[]{"1", "2", "3", "4", "5"};
 		
+		String [] vetorInteiro = new String[] {"1", "2","3", "4","5"};
+				
 		for (int i =0; i < vetorInteiros.length; i++) {	
 		System.out.println(vetorString[i]);
 }		
 	for (int i = 0; i < vetorInteiros.length; i++) {
-		if (vetorInteiros[i] > menor){
+		if (vetorInteiros[i]> maior){
+			maior = vetorInteiros[i];
 		}
 	}
 	for (int i = 0; i < vetorInteiros.length; i++) {
@@ -37,5 +43,10 @@ package Vetor;
 		}	
 	}
 }
+		System.out.println("digite um numero: ");
+		int i = lerNumero.nextInt();
+		posicao = vetorInteiros[i];	
 }
-	}
+			
+}
+	
